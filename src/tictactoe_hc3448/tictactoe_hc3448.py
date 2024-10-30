@@ -46,9 +46,13 @@ def make_move(board, row, col, player):
     >>> make_move(board, 1, 1, 'O')
     False
     """
+    if not (0 <= row < 3 and 0 <= col < 3):
+        raise IndexError(f"Row or column index out of bounds: row={row}, col={col}")
+        
     if board[row][col] == ' ':
         board[row][col] = player
         return True
+        
     return False
 
 
