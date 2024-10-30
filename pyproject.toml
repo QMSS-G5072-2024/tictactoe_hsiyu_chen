@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "tictactoe_hc3448"
+version = "0.1.0"
+description = "python package with tictactoe function for hw07"
+authors = ["HsiYu Chen"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
